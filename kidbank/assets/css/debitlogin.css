@@ -1,0 +1,99 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://hdwallpaperim.com/wp-content/uploads/2017/08/24/101345-simple_background-gradient-748x421.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 400px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20220512/pngtree-low-polygonal-blue-bright-square-background-image_1201189.jpg);
+}
+
+.card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-info {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #555;
+}
+
+.card-number {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.expiry-cvv {
+    font-size: 16px;
+    color: #666;
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+button {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: calc(100% - 26px); /* Adjusted width for equal sizing */
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+button:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#message {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+}

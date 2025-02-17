@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://cdn.pixabay.com/photo/2018/08/04/11/32/typewriter-3583552_1280.jpg); /* Adjust the path to your image */
+    background-size: cover;
+    background-position: center;
+  }
+
+  .chat-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Adding transparency */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .chat-box {
+    height: 300px;
+    overflow-y: scroll;
+    padding: 10px;
+    background-color: rgba(245, 245, 245, 0.8); /* Adding transparency */
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background-image:url(https://cdn.magicdecor.in/com/2023/02/29230632/image-1683285579-9869-710x488.jpg);
+    background-size:cover;
+    background-position:center;
+  }
+
+  .chat-message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 80%;
+  }
+
+  .received {
+    background-color: #d7e6ff;
+    color: #333;
+    align-self: flex-start;
+  }
+
+  .sent {
+    background-color: #f6e140;
+    color: #fff;
+    text-align: right;
+    align-self: flex-end;
+  }
+
+  .message-form {
+    display: flex;
+    align-items: center;
+    border-top: 2px solid #ccc;
+    padding-top: 20px;
+  }
+
+  .message-form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    margin-right: 10px;
+  }
+
+  .message-form button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+
+  .message-form button:hover {
+    background-color: #45a049;
+  }

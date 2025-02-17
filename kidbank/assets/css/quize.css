@@ -1,0 +1,85 @@
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe6ff; /* light purple */
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0; /* light gray */
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    color: #663399; /* purple */
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+#quiz-container {
+    text-align: left;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff; /* white */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.question {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ddd; /* light gray */
+}
+.question p {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+.options label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.options label:hover {
+    color: #663399; /* purple */
+}
+button {
+    padding: 15px 30px;
+    background-color: #663399; /* purple */
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+button:hover {
+    background-color: #5a2d7d; /* darker purple */
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* light gray */
+    text-align: left;
+}
+th {
+    background-color: #663399; /* purple */
+    color: #fff;
+}
+.correct {
+    color: green;
+}
+.incorrect {
+    color: red;
+}

@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .game-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+
+  .game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+  }
+  
+  .piggy-bank {
+    width: 200px;
+    height: 150px;
+    background-image: url('piggy.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    animation: shake 0.8s infinite alternate;
+  }
+
+  .piggy-bank:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+  }
+
+  @keyframes shake {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(3deg); }
+  }
+  
+  .coins {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .coins img {
+    width: 80px;
+    height: auto;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .coins img:hover {
+    transform: scale(1.1) rotate(5deg);
+  }
+  
+  .total {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  .reset-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #c970bb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reset-btn:hover {
+    background-color: #45a049;
+  }
+  .back-btn {
+    padding: 12px 24px; /* Adjust padding as needed */
+    font-size: 18px; /* Adjust font size as needed */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px; /* Adjust margin top as needed */
+    display: block; /* Make the button a block element */
+    margin-left: auto; /* Center the button horizontally */
+    margin-right: auto; /* Center the button horizontally */
+    text-decoration: none; /* Remove default underline */
+  }
+
+  .back-btn a {
+    color: inherit; /* Inherit the button text color */
+    text-decoration: none; /* Remove any text decoration */
+  }
+  
+  .back-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .back-btn {
+    display: inline-block; /* Display buttons in the same line */
+    margin-right: 20px; /* Adjust spacing between buttons */
+    
+  }

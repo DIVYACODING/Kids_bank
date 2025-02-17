@@ -1,0 +1,178 @@
+
+    /* CSS for the Kids Bank Account page */
+    .page {
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        background-color: #FFEECC;
+        margin: 0;
+        padding: 0;
+        background-image:url(https://2.bp.blogspot.com/_h0GJRWHUFZw/TS9iPjz2-KI/AAAAAAAABHM/1JDYkFMt_y8/s1600/ILM_Dev_watchers__1920_Preview_by_allhopeislost.jpg);
+        background-size:cover;
+        background-position:center;
+    }
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #FFF;
+        border-radius: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    .container h1 {
+        color: #FF69B4;
+        margin-bottom: 20px;
+    }
+    .container img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+        animation: float 3s ease-in-out infinite;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        color: #FF69B4;
+    }
+    .form-group input {
+        width: calc(100% - 20px);
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #FFDAB9;
+    }
+    .btn-group {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .btn {
+        flex: 1;
+        padding: 10px;
+        background-color: #FF69B4;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .btn:last-child {
+        margin-left: 10px;
+    }
+    .btn:hover {
+        background-color: #FF1493;
+    }
+    .balance {
+        color: #FF69B4;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .additional-features {
+        border-top: 1px solid #ccc;
+        padding-top: 20px;
+        text-align: left;
+    }
+    .additional-features h2 {
+        color: #FF69B4;
+        margin-top: 0;
+    }
+    .features-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .features-list-item {
+        margin-bottom: 5px;
+    }
+    .donation-container {
+        background-color: #FFDAB9;
+        border-radius: 20px;
+        padding: 20px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .donation-container h2 {
+        color: #FF69B4;
+        margin-top: 0;
+    }
+    .donation-container p {
+        color: #444;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .donation-container .donation-input {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #FFF;
+    }
+    .donation-container .donation-button,
+    .cancel-button {
+        width: calc(40% - 5px);
+        padding: 10px;
+        background-color: #FF69B4;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .donation-button{
+        width: calc(40% - 5px);
+    padding: 10px;
+    background-color: #FF69B4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    }
+    .donation-container .donation-button:last-child,
+    .cancel-button:last-child {
+        margin-left: 10px;
+    }
+    .donation-container .donation-button:hover,
+    .cancel-button:hover {
+        background-color: #FF1493;
+    }
+    .monthly-donation {
+        background-color: #FFDAB9;
+        border-radius: 20px;
+        padding: 20px;
+        margin-top: 20px;
+        text-align: left;
+    }
+    .monthly-donation h2 {
+        color: #FF69B4;
+        margin-top: 0;
+    }
+    .monthly-donation label {
+        display: block;
+        margin-bottom: 5px;
+        color: #FF69B4;
+    }
+    .monthly-donation select {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #FFF;
+    }
+
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+

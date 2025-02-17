@@ -1,0 +1,122 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.animated-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #ff00cc, #3333ff, #66ff33, #ffff00);
+  background-size: 400% 400%;
+  animation: gradient-animation 10s infinite alternate;
+}
+
+@keyframes gradient-animation {
+  0% {
+      background-position: 0 0;
+  }
+  100% {
+      background-position: 100% 100%;
+  }
+}
+
+header h1 {
+  color: #333;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.game-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+/* Game card styles */
+.game {
+  position: relative;
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: calc(33.333% - 40px);
+  margin-bottom: 40px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.game:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.game img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+}
+
+.game h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.game p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Button styles */
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .game {
+      width: calc(50% - 40px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .game {
+      width: calc(100% - 40px);
+  }
+}

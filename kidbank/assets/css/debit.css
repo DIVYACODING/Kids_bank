@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://hdwallpaperim.com/wp-content/uploads/2017/08/24/101345-simple_background-gradient-748x421.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 400px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center;
+    background-image:url(https://png.pngtree.com/thumb_back/fh260/background/20220512/pngtree-low-polygonal-blue-bright-square-background-image_1201189.jpg);
+}
+
+.card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Position relative for chip sign positioning */
+    background-image:url(https://wallpapers.com/images/hd/light-color-background-38wfcy94v20z8og4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.chip {
+    width: 50px;
+    height: 40px;
+    background-color: #999;
+    position: absolute;
+    top: 20px;
+    right: 20px; /* Position chip sign in top-right corner */
+    border-radius: 8px;
+    transform: rotate(-15deg);
+    background-image: url(https://c8.alamy.com/comp/T9MY4C/gold-emv-chip-icon-for-bank-plastic-credit-or-debit-charge-card-vector-symbol-illustration-T9MY4C.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card-info {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #555;
+}
+
+.card-number {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.expiry-cvv {
+    font-size: 16px;
+    color: #666;
+    display: flex;
+    justify-content: space-between;
+}

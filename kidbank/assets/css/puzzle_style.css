@@ -1,0 +1,157 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container styles */
+  .game-container {
+    width: 90%; 
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+/* Add styles for the game title */
+.game-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Add styles for expenses and categories */
+  .expense, .category {
+    padding: 12px 24px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .expense:hover, .category:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Add styles for correct and incorrect categories */
+  .correct {
+    background-color: #90EE90 !important; /* Light green */
+  }
+  
+  .incorrect {
+    background-color: #FF6347 !important; /* Light coral */
+  }
+  
+  /* Add styles for containers */
+  .expenses-container, .categories-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Add styles for check button */
+  .check-btn {
+    padding: 12px 24px; /* Increase button padding */
+  font-size: 18px; /* Increase button font size */
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 30px; /* Adjust margin top */
+  display: block; /* Make the button a block element */
+  margin-left: auto; /* Center the button */
+  margin-right: auto; /* Center the button */
+  }
+  
+  .check-btn:hover {
+    background-color: #45a049;
+  }
+
+  /* Add styles for the button */
+.back-btn {
+    padding: 12px 24px; /* Adjust padding as needed */
+    font-size: 18px; /* Adjust font size as needed */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px; /* Adjust margin top as needed */
+    display: block; /* Make the button a block element */
+    margin-left: auto; /* Center the button horizontally */
+    margin-right: auto; /* Center the button horizontally */
+    text-decoration: none; /* Remove default underline */
+  }
+
+  .back-btn a {
+    color: inherit; /* Inherit the button text color */
+    text-decoration: none; /* Remove any text decoration */
+  }
+  
+  .back-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .check-btn, .back-btn {
+    display: inline-block; /* Display buttons in the same line */
+    margin-right: 20px; /* Adjust spacing between buttons */
+    
+  }
+
+  /* Add animation for draggable elements */
+.draggable {
+    transition: transform 0.3s ease;
+  }
+  
+  .dragging {
+    transform: scale(1.1);
+  }
+
+  
+  /* Add styles for droppable elements */
+  .droppable {
+    border: 2px dashed #aaa;
+  }
+  
+  .droppable.dragover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Add styles for score counter */
+.score {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
+    color: #333;
+
+  }
+
+  
+/* Score animation styles */
+.score-animation {
+    animation: pulse 1s infinite alternate;
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+  
